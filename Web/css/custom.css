@@ -5,3 +5,13 @@ URI:  http://themeforest.net/user/graphic_dev?ref=graphic_dev
 */
 
 /* Use this file to override style.css */
+
+#paper {
+  background: none;
+  background-color: white;
+}
+
+body { 
+  overflow:hidden;
+  background:url(../img/bg/patterns/wood_1.png) repeat;
+}
