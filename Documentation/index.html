@@ -1,0 +1,449 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Notebook - Virtual Business Card Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Notebook - Virtual Business Card Template&rdquo; Documentation by &ldquo;graphic_dev&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">Notebook</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 27/12/2011<br>
+					By: graphic_dev<br>
+					Email: <a href="mailto:jocke_aglo@hotmail.com">jocke_aglo@hotmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/graphic_dev?graphic_dev">here</a>. Thank you!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<p>Please rate this template at <a href="http://www.themeforest.com/user/graphic_dev?ref=graphic_dev" target="_blank">Themeforest</a> if you are satisfied with it! If you for some reason don't want to give a 5 star rating; please let me know why and maybe I can sort it out. I've spent a lot of time making this template so it is important that you are happy with your purchase.</p>
+
+    <p style="margin-left:335px"><img style="margin:0 4px 0 0;" src="assets/images/star.png" alt="Star" /><img style="margin:0 4px 0 0;" src="assets/images/star.png" alt="Star" /><img style="margin:0 4px 0 0;" src="assets/images/star.png" alt="Star" /><img style="margin:0 4px 0 0;" src="assets/images/star.png" alt="Star" /><img style="margin:0 4px 0 0;" src="assets/images/star.png" alt="Star" />
+    </p>
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#a">HTML Structure</a></li>
+			<li><a href="#b">Vertical Rhythm</a></li>
+			<li><a href="#c">Images</a></li>
+			<li><a href="#d">Choose Background</a></li>
+			<li><a href="#e">Display Your Skills</a></li>
+      <li><a href="#f">Network</a></li>
+      <li><a href="#g">Contact</a></li>
+      <li><a href="#h">Google Analytics</a></li>
+      <li><a href="#i">Plugins</a></li>
+      <li><a href="#j">Override CSS</a></li>
+		</ol>
+		
+		<hr>
+
+    <p>
+      <strong>NOTE:</strong> The Facebook Like Box won't load if you open the website locally - you will have to upload it to a server in order for it to work properly.
+    </p>
+
+    <hr>
+		
+		<h3 id="a"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+  <p>
+    The structure consists of the following main components:
+  </p>
+
+  <ul>
+    <li><strong style="color:green">Navigation</strong> - Used to navigate between the different pages.</li>
+    <li><strong style="color:red">Pages</strong> - The different pages (home, about me, work etc).</li>
+    <li><strong style="color:orange">Tabs</strong> - Each page can have one or multiple tabs. If you use multiple tabs; you navigate between them by clicking on the next and previous arrows shown in the header.</li>
+    <li><strong style="color:purple">Column(s)</strong> - Each page can have a layout with one column (full width) or two columns.</li>
+    <li><strong style="color:blue">Header</strong> - Your name at the top of each page (except for the home page, which hides the header).</li>
+  </ul>
+
+  <img src="assets/images/structure.jpg" alt="Structure" />
+
+  <h4>Tabs - <a href="#toc">top</a></h4>
+  <p>
+    Each page can have one or multiple tabs. Tabs are essentially the same things as pages - the only difference is that you navigate between them by clicking on the arrows in the header (see screenshot above). In the demo, the About Me page has one tab and the Work Page has six tabs. You can use any number of tabs.
+  </p>
+
+  <h5>Multiple Tabs</h5>
+  <p>
+    Each tab is wrapped by a div with the class tab (&lt;div class="tab">). To add multiple tabs on a page, simple add more tabs to that page. See the following example to add two tabs to the About Me page:
+  </p>
+  <pre>&lt;!--##############################################--> 
+&lt;!--################   About Me  #################-->
+&lt;!--##############################################--> 
+&lt;div id="about-me">
+  &lt;div id="about-me-nav">
+    &lt;a class="prev" href="#" title="Previous">&lt;img src="img/arrow-left.png" alt="Previous">&lt;/a>
+    &lt;a class="next" href="#" title="Next">&lt;img src="img/arrow-right.png" alt="Next">&lt;/a>
+  &lt;/div>
+
+  &lt;div id="about-me-pages">
+          
+  &lt;!--################### Tab 1 ###################-->
+  &lt;div class="tab">
+    &lt;div class="full-width">
+      FULL WIDTH CONTENT HERE
+    &lt;/div>
+  &lt;/div>
+
+  &lt;!--################### Tab 2 ###################-->
+  &lt;div class="tab">
+    &lt;div class="col1">
+      COLUMN 1 CONTENT HERE
+    &lt;/div>
+
+    &lt;div class="col2">
+      COLUMN 2 CONTENT HERE
+    &lt;/div>
+  &lt;/div>
+
+&lt;/div></pre>
+
+  <p>
+    The About Me page above has two tabs. Tab one consists of a full width column and tab two has two columns.
+  </p>
+
+  <h5>Single Tab</h5>
+  <p>
+    If you want a page to have one tab, simply add <strong>one</strong> tab to that page.
+  </p>
+
+  <pre>&lt;!--##############################################--> 
+&lt;!--################   About Me  #################-->
+&lt;!--##############################################--> 
+&lt;div id="about-me">
+  &lt;div id="about-me-nav">
+    &lt;a class="prev" href="#" title="Previous">&lt;img src="img/arrow-left.png" alt="Previous">&lt;/a>
+    &lt;a class="next" href="#" title="Next">&lt;img src="img/arrow-right.png" alt="Next">&lt;/a>
+  &lt;/div>
+
+  &lt;div id="about-me-pages">
+          
+  &lt;!--################### Tab 1 ###################-->
+  &lt;div class="tab">
+    &lt;div class="full-width">
+      FULL WIDTH CONTENT HERE
+    &lt;/div>
+  &lt;/div>
+
+&lt;/div></pre>
+
+  <p>
+    The About Me page above has one tab, which consists of a full width column.
+  </p>
+
+  <h4>Columns - <a href="#toc">top</a></h4>
+  <p>
+    Each page can have a one column (full width) or a two column layout.
+  </p>
+
+  <h5>One Column (full-width)</h5>
+  <p>
+    Use the class "full-width" on the div right after the start of the tab. Below is an example of a tab with a <strong>full width</strong> layout:
+  </p>
+
+  <pre>&lt;div class="tab">
+  &lt;div class="full-width">
+    FULL WIDTH CONTENT HERE
+  &lt;/div>
+&lt;/div></pre>
+
+  <h5>Two Columns</h5>
+  <p>
+    To use a two column layout, add two &lt;div> elements with the classes "col1" and "col2". Below is an example of a tab with a <strong>two column</strong> layout:
+  </p>
+
+  <pre>&lt;div class="tab">
+  &lt;div class="col1">
+    COLUMN 1 CONTENT HERE
+  &lt;/div>
+
+  &lt;div class="col2">
+    COLUMN 2 CONTENT HERE
+  &lt;/div>
+&lt;/div></pre>
+
+  <hr />
+
+  <h3 id="b"><strong>B) Vertical Rhythm</strong> - <a href="#toc">top</a></h3>
+  <p>
+    The Notebook template has been designed and developed with a good vertical rhythm so that everything flows naturally. The lineheight is 21 pixels, which means that images should have a height of multiples of 21. This way the vertical rhythm won't break.
+  </p>
+  <p>
+    So ultimately the height should be 21 pixels, 42 pixels, 63 pixels and so on (up to 210 pixels). <a href="http://www.alistapart.com/articles/settingtypeontheweb" target="_blank">Read more about veritcal rhythm in this article</a> (not necessary for the use of this template).
+  </p>
+
+  <img src="assets/images/210px.jpg" alt="210 pixels" />
+  <img style="float:right" src="assets/images/105px.jpg" alt="105 pixels" />
+
+  <hr />
+
+  <h3 id="c"><strong>C) Images</strong> - <a href="#toc">top</a></h3>
+
+  <h4>Border / Frame</h4>
+  <p>
+    Add the class <strong>border</strong> to all images to add a white padding and a gray border around the image (like a frame).
+  </p>
+
+  <pre>&lt;img class="border" src="../img/image.jpg" /></pre>
+
+  <h4>Gallery</h4>
+  <p>
+    Galleries are collection of images. Once you click on an image to zoom it; a slideshow will be displayed with all the images in the gallery (see screenshot below).
+  </p>
+
+  <img src="assets/images/slideshow.jpg" alt="Slideshow" />
+
+  <p>
+    A gallery should be wrapped with a div that has the class "gallery". If the gallery contains images on multiple rows, then the class <strong>last</strong> should be added to the last image of each row. See example below.
+  </p>
+
+  <pre>&lt;div class="gallery">
+  &lt;a href="img/picture1.jpg" data-rel="prettyPhoto[gallery2]" title="Espresso">&lt;img class="border" src="img/david-thunander/espresso-210x207.jpg" width="207" height="210" alt="2pm espresso" />&lt;/a>
+  &lt;a href="img/picture2.jpg" data-rel="prettyPhoto[gallery2]" title="Bus">&lt;img class="border" src="img/david-thunander/bus-84x84.jpg" width="84" height="84" alt="The Bus to Something New" />&lt;/a>
+  &lt;a href="img/picture3.jpg" data-rel="prettyPhoto[gallery2]" title="Dogs">&lt;img class="last border" src="img/david-thunander/dogs-84x84.jpg" width="84" height="84" alt="Dogs of Freedom" />&lt;/a>
+
+  &lt;a href="img/picture4.jpg" data-rel="prettyPhoto[gallery2]" title="Road">&lt;img class="border" src="img/david-thunander/road-84x84.jpg" width="84" height="84" alt="The Road to Paradise" />&lt;/a>
+  &lt;a href="img/picture5.jpg" data-rel="prettyPhoto[gallery2]" title="Walking">&lt;img class="last border" src="img/david-thunander/walking-84x84.jpg" width="84" height="84" alt="Got Snow?" />&lt;/a>
+&lt;/div></pre>
+
+  <p>
+    Notice that the class <strong>last</strong> has been added on picture3 and picture5, which are the last images on row 1 and 2. (The other images only has the class <strong>border</strong>).
+  </p>
+
+  <img src="assets/images/last.jpg" alt="Class last" />
+
+  <h4>Image zoom</h4>
+  <p>
+    The prettyPhoto plugin is used for the zoom effect when you click on images. To activate this effect, wrap the image inside an anchor. The anchor should link to the larger image and the <strong>data-rel</strong> attribute should be given the value of <strong>prettyPhoto</strong> (data-rel="prettyPhoto").
+  </p>
+
+  <p>
+    You can group images in prettyPhoto by adding a group name to the data-rel attribute (ie <strong>rel="prettyPhoto[GROUPNAME]"</strong>). By grouping several images, they will be showed as a slideshow in prettyPhoto. Try clicking on any image in a gallery in a demo. You will see that you can move to the next and previous images in the bottom left corner in prettyPhoto.
+  </p>
+
+  <pre>&lt;div class="gallery">
+  &lt;a href="img/picture1.jpg" data-rel="prettyPhoto[gallery2]" title="Espresso">&lt;img class="border" src="img/david-thunander/espresso-210x207.jpg" width="207" height="210" alt="2pm espresso" />&lt;/a>
+  &lt;a href="img/picture2.jpg" data-rel="prettyPhoto[gallery2]" title="Bus">&lt;img class="border" src="img/david-thunander/bus-84x84.jpg" width="84" height="84" alt="The Bus to Something New" />&lt;/a>
+  &lt;a href="img/picture3.jpg" data-rel="prettyPhoto[gallery2]" title="Dogs">&lt;img class="last border" src="img/david-thunander/dogs-84x84.jpg" width="84" height="84" alt="Dogs of Freedom" />&lt;/a>
+
+  &lt;a href="img/picture4.jpg" data-rel="prettyPhoto[gallery2]" title="Road">&lt;img class="border" src="img/david-thunander/road-84x84.jpg" width="84" height="84" alt="The Road to Paradise" />&lt;/a>
+  &lt;a href="img/picture5.jpg" data-rel="prettyPhoto[gallery2]" title="Walking">&lt;img class="last border" src="img/david-thunander/walking-84x84.jpg" width="84" height="84" alt="Got Snow?" />&lt;/a>
+&lt;/div></pre>
+
+  <p>
+    All three images in the above example are grouped together with a name of <strong>gallery3</strong>. Note that all images are linking to the same image (800x400.gif), so the three slides will show the same image.
+  </p>
+  
+  <hr />
+
+ <h3 id="d"><strong>D) Choose Background</strong> - <a href="#toc">top</a></h3>
+ <img src="assets/images/wavecut.gif" style="float:right; margin-left:20px;" />
+  <p>
+    Chose the pattern that you like by using the Settings in the <a href="http://www.graphic-dev.com/templates/notebook/" target="_blank">online demo</a> (click on the top left settings icon). Click on the different patterns to toggle between them. Once you have found a pattern that you like, hover over the preview image again to see the name of that pattern. Let's say you want to use the pattern "wavecut". Open up the <strong>style.css</strong> file in the css folder. Find the code below and change to your pattern (in this case <strong>wavecut.png</strong>).
+  </p>
+
+  <pre style="clear:both">body { 
+  overflow:hidden;
+  background:url(../img/bg/patterns/wavecut.png) repeat;
+}</pre>
+  
+  <hr />
+
+  <h3 id="e"><strong>E) Display Your Skills</strong> - <a href="#toc">top</a></h3>
+  <p>
+    <img src="assets/images/skills.gif" style="float:right;" />
+    You can display your skills in five colors:
+  </p>
+
+  <ul>
+    <li>Blue</li>
+    <li>Purple</li>
+    <li>Red</li>
+    <li>Green</li>
+    <li>Black</li>
+  </ul>
+
+  <pre>&lt;div class="skill">
+  &lt;p>HTML5 &lt;span>9/10&lt;/span>&lt;/p>
+  &lt;div class="progress-bar blue">
+    &lt;span style="width:90%">.&lt;/span>
+  &lt;/div>&lt;!-- .progress-bar -->
+&lt;/div></pre>
+
+  <p>
+    Each skill is wrapped in a div with the class <strong>skill</strong>. All you have to change is the name of the skill (<strong>HTML 5</strong>), the grade (at two places: <strong>9/10</strong> and width:<strong>90%</strong>) and the color of the progress bar (<strong>blue</strong>).
+  </p>
+
+  <hr />
+
+  <h3 id="f"><strong>F) Network</strong> - <a href="#toc">top</a></h3>
+  <h4>Social Links</h4>
+  <p>
+    <img src="assets/images/social.jpg" style="float:right;" />
+    75 social icons are included in the Notebook template (see <strong>img/icons/social</strong>). Adding a link to a social network is easy. Go to the icons folder and check the name of the icon that you want to use (ie <strong>facebook_32.png</strong>). Then change the link inside the <strong>href</strong> attribute, the image <strong>alt</strong> attribute, the name of the network (inside the <strong>strong</strong> element) and the link that you want to display on the second line.
+  </p>
+
+  <pre style="clear:both">&lt;!-- Network 1 -->
+  &lt;a class="network" href="http://www.facebook.com/JonathanDoe">
+  &lt;img src="img/icons/social/facebook_32.png" alt="Facebook" />
+    &lt;strong>Facebook&lt;/strong>
+    facebook.com/JonathanDoe
+  &lt;/a>
+&lt;!-- End Network 1 --></pre>
+
+  <h4>Facebook Like Box</h4>
+  <p>
+    You can add a Facebook Like Box for your Facebook page. All you have to do is add the code below and change the link to your Facebook page inside the <strong>data-href</strong> attribute:
+  </p>
+
+  <pre>&lt;div id="fb-root">&lt;/div>
+&lt;div id="fb-wrapper">
+  &lt;div class="fb-like-box" data-href="http://www.facebook.com/platform" data-width="215" data-height="225" data-show-faces="true" data-border-color="#7992c9" data-stream="false" data-header="false">&lt;/div>
+&lt;/div></pre>
+
+  <p>
+    The Facebook Like Box uses asynchronous loading, which means that that it won't affect the load time of the rest of the site and that it won't have a negative affect on your Google page speed score.
+  </p>
+
+  <p>
+    <strong>NOTE:</strong> The Facebook Like Box won't load if you open the website locally - you will have to upload it to a server in order for it to work properly.
+  </p>
+
+  <hr />
+
+  <h3 id="g"><strong>G) Contact</strong> - <a href="#toc">top</a></h3>
+  <p>
+    The contact form uses validation to check that all mandatory fields are filled in. It also makes sure that the e-mail is valid. The send button comes in five colors:
+  </p>
+  <ul>
+    <li>Blue</li>
+    <li>Purple</li>
+    <li>Red</li>
+    <li>Green</li>
+    <li>Black</li>
+  </ul>
+
+  <p>
+    The button will adjust the width automatically if you change the text. You change the color of the button by changing its class. The following code will give a blue button with the text "Let's do this!".
+  </p>
+
+  <pre>&lt;button value="submit" class="blue" type="submit">&lt;span>Let's do this!&lt;/span></button></pre>
+
+  <h4>E-mail Template</h4>
+  <p>
+    Once the form is filled in correctly and the user has clicked on the submit button; a success message will be shown. You can change this message, the address where you want the message to be sent and other details in the file <strong>sendemail.php</strong> (found in the php folder):
+  </p>
+
+  <pre>// Your name
+$myname = 'George Johnson';
+
+// Your email
+$myemail = 'your@email.com';
+
+// Email subject
+$subject = 'Contact Form';
+
+// Success message
+$success = 'Your message has been sent!';</pre>
+
+  <p>
+    To change the loading text, open <strong>custom.js</strong> (<strong>js</strong> folder) and find this:
+  </p>
+
+  <pre>// Form
+  $("#contact-form").validate({
+    submitHandler: function(form) {
+      $(form).ajaxSubmit(options); 
+      $('#form-output p').remove();
+      $('#form-output').append('&lt;p class="loading">Sending your message...&lt;/p>');
+      return false; 
+     }
+  });</pre>
+
+  <p>
+    Simply change the text "Sending your message..." to whatever message you want to be shown.
+  </p>
+
+  <hr />
+
+  <h3 id="h"><strong>H) Google Analytics</strong> - <a href="#toc">top</a></h3>
+  <p>
+    To activate Google Analytics, simply go to the bottom of the <strong>index.html</strong> file and change <strong>UA-12345678-1</strong> to your Google Analytics ID:
+  </p>
+
+  <pre>&lt;!-- Google Analytics -->
+&lt;script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12345678-1']); /* Change to your Google Analytics ID */
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+&lt;/script>
+&lt;!-- End Google Analytics --></pre>
+
+  <hr />
+
+  <h3 id="i"><strong>I) Plugins</strong> - <a href="#toc">top</a></h3>
+
+  <p>
+    Notebook uses several jQuery Plugins. For support on how to customize these plugins, please use their support:
+  </p>
+
+  <ul>
+    <li>Tipsy - <a href="http://onehackoranother.com/projects/jquery/tipsy/" target="_blank">http://onehackoranother.com/projects/jquery/tipsy/</a></li>
+    <li>Cycle - <a href="http://jquery.malsup.com/cycle/" target="_blank">http://jquery.malsup.com/cycle/</a></li>
+    <li>prettyPhoto - <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/" target="_blank">http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/</a></li>
+    <li>Validate - <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+    <li>Form - <a href="http://jquery.malsup.com/form/" target="_blank">http://jquery.malsup.com/form/</a></li>
+  </ul>
+
+  <hr>
+
+  <h3 id="j"><strong>J) Override CSS</strong> - <a href="#toc">top</a></h3>
+
+  <p>
+    Use the file css/custom.css for overriding any CSS code. By doing this, you make sure that you can download future versions of the template while keeping you own customizations.
+  </p>
+		
+		<hr>
+		
+		<p>Thanks again for purchasing the Notebook template. I will do my best to help if you have any questions that is not covered in this documentation. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>graphic_dev</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
