@@ -15,3 +15,7 @@ body {
   overflow:hidden;
   background:url(../img/bg/patterns/wood_1.png) repeat;
 }
+
+h2 {
+  padding-bottom: 21px;
+}
