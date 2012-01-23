@@ -19,3 +19,16 @@ body {
 h2 {
   padding-bottom: 21px;
 }
+
+#contact-form {
+  margin-top: 0;
+}
+form {
+  padding-top: 0;
+}
+
+.tag-box li {
+  list-style:none;
+  padding-left:27px;
+  background:url(../img/icons/tag.png) no-repeat;
+}
