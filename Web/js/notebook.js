@@ -174,4 +174,14 @@ $(document).ready(function () {
         }
       })
     });
+    
+    $(function(){
+      var spt = $('span.mailme');
+      var at = / at /;
+      var dot = / dot /g;
+      var addr = $(spt).text().replace(at,"@").replace(dot,".");
+      $(spt).after('<strong><a href="mailto:'+addr+'" title="Send an email">'+ addr +'</a></strong>')
+      .hover(function(){window.status="Send a letter!";}, function(){window.status="";});
+      $(spt).remove();
+    });
 });
